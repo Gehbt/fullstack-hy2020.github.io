@@ -356,7 +356,7 @@ const App = () => {
 ![](../../images/2/29b.png)
 
 <!-- Fix the issue according to the example shown in [promise and errors](/en/part2/altering_data_in_server#promises-and-errors) in part 2. Modify the example so that the user is shown a message when the operation does not succeed. The messages shown for successful and unsuccessful events should look different:-->
-按照第二章节中[承诺和错误](/en/part2/altering_data_in_server#promises-and-errors)所示的例子来解决这个问题。修改这个例子，使用户在操作不成功时显示一条信息。为成功和不成功的事件显示的信息应该是不同的。
+按照第二章节中[promises-and-errors](zh/part2/%E5%9C%A8%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%B0%86%E6%95%B0%E6%8D%AE_alert%E5%87%BA%E6%9D%A5#promises-and-errors)所示的例子来解决这个问题。修改这个例子，使用户在操作不成功时显示一条信息。为成功和不成功的事件显示的信息应该是不同的。
 
 ![](../../images/2/28e.png)
 
