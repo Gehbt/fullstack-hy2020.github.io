@@ -216,7 +216,7 @@ const App = () => {
 ### Frontend and backend in the same repository
 
 <!-- During the course, we have created the frontend and backend into separate repositories. This is a very typical approach. However, we did the deployment by [copying](/en/part3/deploying_app_to_internet#serving-static-files-from-the-backend) the bundled frontend code into the backend repository. A possibly better approach would have been to deploy the frontend code separately. Especially with applications created using Create React App it is very straightforward thanks to the included [buildpack](https://github.com/mars/create-react-app-buildpack).-->
- 在课程中，我们将前端和后端创建为不同的存储库。这是一个非常典型的方法。然而，我们通过[复制](/en/part3/deploying_app_to_internet#serving-static-files-from-the-backend)将捆绑的前端代码复制到后端仓库来进行部署。一个可能更好的方法是将前端代码单独部署。特别是对于使用Create React App创建的应用，由于包含了[buildpack](https://github.com/mars/create-react-app-buildpack)，它是非常直接的。
+ 在课程中，我们将前端和后端创建为不同的存储库。这是一个非常典型的方法。然而，我们通过[复制](/zh/part3/%E6%8A%8A%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2%E5%88%B0%E7%BD%91%E4%B8%8A#serving-static-files-from-the-backend)将捆绑的前端代码复制到后端仓库来进行部署。一个可能更好的方法是将前端代码单独部署。特别是对于使用Create React App创建的应用，由于包含了[buildpack](https://github.com/mars/create-react-app-buildpack)，它是非常直接的。
 
 <!-- Sometimes, there may be a situation where the entire application is to be put into a single repository. In this case, a common approach is to put the <i>package.json</i> and <i>webpack.config.js</i> in the root directory, as well as place the frontend and backend code into their own directories, e.g. <i>client</i> and <i>server</i>.-->
  有时，可能会出现整个应用要放到一个仓库中的情况。在这种情况下，常见的做法是将<i>package.json</i>和<i>webpack.config.js</i>放在根目录下，同时将前端和后端代码放在各自的目录下，例如<i>client</i>和<i>server</i>。
@@ -611,7 +611,7 @@ Will install react-scripts@5.0.0, which is a breaking change
  下面列出了一些由值得信赖的各方推荐的库。
 
 <!-- If your application has to handle complicated data, [lodash](https://www.npmjs.com/package/lodash), which we recommended in [part 4](/en/part4/structure_of_backend_application_introduction_to_testing#exercises-4-3-4-7), is a good library to use. If you prefer functional programming style, you might consider using [ramda](https://ramdajs.com/).-->
- 如果你的应用需要处理复杂的数据，我们在[第四章节](/en/part4/structure_of_backend_application_introduction_to_testing#exercises-4-3-4-7)中推荐的[lodash](https://www.npmjs.com/package/lodash)是一个值得使用的库。如果你喜欢函数式编程风格，你可以考虑使用[ramda](https://ramdajs.com/)。
+ 如果你的应用需要处理复杂的数据，我们在[第四章节](/zh/part4/%E4%BB%8E%E5%90%8E%E7%AB%AF%E7%BB%93%E6%9E%84%E5%88%B0%E6%B5%8B%E8%AF%95%E5%85%A5%E9%97%A8#exercises-4-3-4-7)中推荐的[lodash](https://www.npmjs.com/package/lodash)是一个值得使用的库。如果你喜欢函数式编程风格，你可以考虑使用[ramda](https://ramdajs.com/)。
 
 <!-- Jos sovelluksessa käsitellään aikaa, tarjoavat [moment](https://momentjs.com/) ja hieman uudempi [date-fns](https://github.com/date-fns/date-fns) siihen hyvän välineistön. -->
 <!-- If you are handling times and dates, [date-fns](https://github.com/date-fns/date-fns) offers good tools for that.-->

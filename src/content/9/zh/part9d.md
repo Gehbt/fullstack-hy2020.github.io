@@ -255,7 +255,7 @@ const Welcome = ({ name }: { name: string }) => (
  用TypeScript创建一个新的Create React App，并为该项目设置eslint，类似于我们刚才的做法。
 
 <!-- This exercise is similar to the one you have already done in [Part 1](/en/part1/java_script#exercises-1-3-1-5) of the course, but with TypeScript and some extra tweaks. Start off by modifying the contents of <i>index.tsx</i> to the following:-->
- 这个练习与你在课程的[第一章节](/en/part1/java_script#exercises-1-3-1-5)中已经完成的练习类似，但使用TypeScript和一些额外的调整。首先，将<i>index.tsx</i>的内容修改为以下内容。
+ 这个练习与你在课程的[第一章节](/zh/part1/java_script#exercises-1-3-1-5)中已经完成的练习类似，但使用TypeScript和一些额外的调整。首先，将<i>index.tsx</i>的内容修改为以下内容。
 
 ```jsx
 import React from "react";

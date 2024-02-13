@@ -20,7 +20,7 @@ npm install mongoose
 ```
 
 <!-- We will imitate what we did in parts [3](/en/part3/saving_data_to_mongo_db) and [4](/en/part4/structure_of_backend_application_introduction_to_testing).-->
- 我们将模仿我们在[3](/en/part3/saving_data_to_mongo_db)和[4](/en/part4/structure_of_backend_application_introduction_to_testing)部分的做法。
+ 我们将模仿我们在[3](/zh/part3/%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%85%A5_mongo_db)和[4](/zh/part4/%E4%BB%8E%E5%90%8E%E7%AB%AF%E7%BB%93%E6%9E%84%E5%88%B0%E6%B5%8B%E8%AF%95%E5%85%A5%E9%97%A8)部分的做法。
 
 
 <!-- The person schema has been defined as follows:-->
@@ -207,7 +207,7 @@ Mutation: {
 ### User and log in
 
 <!-- Let's add user management to our application. For simplicity's sake, let's assume that all users have the same password which is hardcoded to the system. It would be straightforward to save individual passwords for all users following the principles from [part 4](/en/part4/user_administration), but because our focus is on GraphQL, we will leave out all that extra hassle this time.-->
- 让我们把用户管理加入我们的应用。为了简单起见，我们假设所有的用户都有相同的密码，并且是硬编码的。按照[第4章节](/en/part4/user_administration)的原则，为所有用户保存单独的密码是很直接的，但由于我们的重点是GraphQL，这次我们将省去所有这些额外的麻烦。
+ 让我们把用户管理加入我们的应用。为了简单起见，我们假设所有的用户都有相同的密码，并且是硬编码的。按照[第4章节](/zh/part4/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86)的原则，为所有用户保存单独的密码是很直接的，但由于我们的重点是GraphQL，这次我们将省去所有这些额外的麻烦。
 
 <!-- The user schema is as follows:-->
  用户模式如下。
@@ -236,7 +236,7 @@ module.exports = mongoose.model('User', schema)
  每个用户都通过_friends_字段与系统中的一堆其他人相联系。我们的想法是，当一个用户，例如<i>mluukkai</i>，把一个人，例如<i>Arto Hellas</i>，添加到列表中时，这个人就被添加到他们的_friends_列表中。这样，登录的用户可以在应用中拥有自己的个性化视图。
 
 <!-- Logging in and identifying the user are handled the same way we used in [part 4](/en/part4/token_authentication) when we used REST, by using tokens.-->
- 登录和识别用户的方式与我们在[第四章节](/en/part4/token_authentication)中使用REST时使用的方式相同，都是通过使用令牌。
+ 登录和识别用户的方式与我们在[第四章节](/zh/part4/%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81)中使用REST时使用的方式相同，都是通过使用令牌。
 
 
 <!-- Let's extend the schema like so:-->
@@ -312,7 +312,7 @@ Mutation: {
 ```
 
 <!-- The new user mutation is straightforward. The login mutation checks if the username/password pair is valid. And if it is indeed valid, it returns a jwt token familiar from [part 4](/en/part4/token_authentication).-->
- 新用户的改变是简单的。登录改变检查用户名/密码对是否有效。如果它确实有效，它会返回一个从[第4章节](/en/part4/token_authentication)熟悉的jwt令牌。
+ 新用户的改变是简单的。登录改变检查用户名/密码对是否有效。如果它确实有效，它会返回一个从[第4章节](/zh/part4/%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81)熟悉的jwt令牌。
 
 <!-- Just like in the previous case with REST, the idea now is that a logged-in user adds a token they receive upon login to all of their requests. And just like with REST, the token is added to GraphQL queries using the <i>Authorization</i> header.-->
  就像之前的REST案例一样，现在的想法是，一个登录的用户将他们在登录时收到的令牌添加到他们的所有请求中。就像REST一样，使用<i>Authorization</i>头将令牌添加到GraphQL查询中。

@@ -132,7 +132,7 @@ console.log(m2)
 ```
 
 <!-- Here an array filled with integer values is transformed into an array containing strings of HTML using the map method. In [part 2](/en/part2) of this course, we will see that map is used quite frequently in React.-->
-在这里，一个充满整数值的数组通过map方法被转化为一个包含HTML字符串的数组。在本课程的[第二章节](/en/part2)中，我们将看到map在React中的使用相当频繁。
+在这里，一个充满整数值的数组通过map方法被转化为一个包含HTML字符串的数组。在本课程的[第二章节](/zh/part2)中，我们将看到map在React中的使用相当频繁。
 
 <!-- Individual items of an array are easy to assign to variables with the help of the [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment).-->
  在[解构赋值](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)的帮助下，数组中的单个项目很容易被赋值给变量。

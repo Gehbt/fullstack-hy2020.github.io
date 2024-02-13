@@ -83,7 +83,7 @@ lang: zh
  部署指的是把软件放在最终用户需要使用的地方。在库的情况下，这可能只是意味着将一个npm包推送到一个包存档（如npmjs.com），其他用户可以找到它并将其包含在他们的软件中。
 
 <!-- Deploying a service (such as a web app) can vary in complexity. In [part 3](/en/part3/deploying_app_to_internet) our deployment workflow involved running some scripts manually and pushing the repository code to [Heroku](https://www.heroku.com/) hosting service.-->
- 部署一个服务（如网络应用）的复杂程度可能不同。在[第三章节](/en/part3/deploying_app_to_internet)中，我们的部署工作流程涉及手动运行一些脚本，并将版本库代码推送到[Heroku](https://www.heroku.com/)托管服务。
+ 部署一个服务（如网络应用）的复杂程度可能不同。在[第三章节](/zh/part3/%E6%8A%8A%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2%E5%88%B0%E7%BD%91%E4%B8%8A)中，我们的部署工作流程涉及手动运行一些脚本，并将版本库代码推送到[Heroku](https://www.heroku.com/)托管服务。
 
 <!-- In this part, we'll develop a simple "deployment pipeline" that deploys each commit of your code automatically to Heroku <i>if</i> the committed code does not break anything.-->
  在这一部分中，我们将开发一个简单的 "部署管道"，将你每次提交的代码自动部署到Heroku，<i>如果</i>提交的代码没有破坏任何东西。

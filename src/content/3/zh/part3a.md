@@ -21,11 +21,11 @@ lang: zh
 
 
 <!-- As mentioned in [part 1](/en/part1/java_script), browsers don't yet support the newest features of JavaScript, and that is why the code running in the browser must be <i>transpiled</i> with e.g. [babel](https://babeljs.io/). The situation with JavaScript running in the backend is different. The newest version of Node supports a large majority of the latest features of JavaScript, so we can use the latest features without having to transpile our code.-->
- 正如在 [第一章节](/en/part1/java_script) 中提到的，浏览器还不支持 JavaScript 的最新功能，这就是为什么在浏览器中运行的代码必须用例如 [babel](https://babeljs.io/) 进行 <i> 转写 </i>。在后端运行的 JavaScript 的情况则不同。最新版本的 Node 支持 JavaScript 的绝大部分最新特性，所以我们可以使用最新的特性，而不必转译我们的代码。
+ 正如在 [第一章节](/zh/part1/java_script) 中提到的，浏览器还不支持 JavaScript 的最新功能，这就是为什么在浏览器中运行的代码必须用例如 [babel](https://babeljs.io/) 进行 <i> 转写 </i>。在后端运行的 JavaScript 的情况则不同。最新版本的 Node 支持 JavaScript 的绝大部分最新特性，所以我们可以使用最新的特性，而不必转译我们的代码。
 
 
 <!-- Our goal is to implement a backend that will work with the notes application from [part 2](/en/part2/). However, let's start with the basics by implementing a classic "hello world" application.-->
- 我们的目标是实现一个能与 [第二章节](/en/part2/) 中的笔记应用一起工作的后端。然而，让我们从最基本的开始，实现一个经典的 "hello world " 应用。
+ 我们的目标是实现一个能与 [第二章节](/zh/part2/) 中的笔记应用一起工作的后端。然而，让我们从最基本的开始，实现一个经典的 "hello world " 应用。
 
 
 <!-- **Notice** that the applications and exercises in this part are not all React applications, and we will not use the <i>create-react-app</i> utility for initializing the project for this application.-->
@@ -33,7 +33,7 @@ lang: zh
 
 
 <!-- We had already mentioned [npm](/en/part2/getting_data_from_server#npm) back in part 2, which is a tool used for managing JavaScript packages. In fact, npm originates from the Node ecosystem.-->
- 我们在第二章节已经提到了 [npm](/en/part2/getting_data_from_server#npm)，它是一个用于管理 JavaScript 包的工具。事实上，npm 起源于 Node 生态系统。
+ 我们在第二章节已经提到了 [npm](/zh/part2/%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE#npm)，它是一个用于管理 JavaScript 包的工具。事实上，npm 起源于 Node 生态系统。
 
 
 <!-- Let's navigate to an appropriate directory, and create a new template for our application with the _npm init_ command. We will answer the questions presented by the utility, and the result will be an automatically generated <i>package.json</i> file at the root of the project that contains information about the project.-->
@@ -279,7 +279,7 @@ console.log(`Server running on port ${PORT}`)
  在 <i>Content-Type</i> 头中的 <i>application/json</i> 值通知接收者，数据是 JSON 格式的。_notes_ 数组通过 <em>JSON.stringify(notes)</em> 方法被转换为 JSON。
 
 <!-- When we open the browser, the displayed format is exactly the same as in [part 2](/en/part2/getting_data_from_server/) where we used [json-server](https://github.com/typicode/json-server) to serve the list of notes:-->
- 当我们打开浏览器时，显示的格式与 [第二章节](/en/part2/getting_data_from_server/) 中完全一样，在那里我们使用 [json-server](https://github.com/typicode/json-server) 来提供笔记的列表。
+ 当我们打开浏览器时，显示的格式与 [第二章节](/zh/part2/%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE) 中完全一样，在那里我们使用 [json-server](https://github.com/typicode/json-server) 来提供笔记的列表。
 
 ![](../../images/3/2e.png)
 
@@ -570,7 +570,7 @@ npm run dev
 
 
 <!-- We mentioned in the [previous part](/en/part2/altering_data_in_server#rest) that singular things, like notes in the case of our application, are called <i>resources</i> in RESTful thinking. Every resource has an associated URL which is the resource's unique address.-->
- 我们在 [前一部分](/en/part2/altering_data_in_server#rest) 中提到，在 RESTful 思想中，单一的东西，如我们应用中的笔记，被称为 <i> 资源 </i>。每个资源都有一个相关的 URL，这是资源的唯一地址。
+ 我们在 [前一部分](/zh/part2/%E5%9C%A8%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%B0%86%E6%95%B0%E6%8D%AE_alert%E5%87%BA%E6%9D%A5#rest) 中提到，在 RESTful 思想中，单一的东西，如我们应用中的笔记，被称为 <i> 资源 </i>。每个资源都有一个相关的 URL，这是资源的唯一地址。
 
 
 <!-- One convention is to create the unique address for resources by combining the name of the resource type with the resource's unique identifier.-->

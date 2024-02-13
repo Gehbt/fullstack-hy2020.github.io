@@ -36,7 +36,7 @@ lang: zh
  本章节的所有练习都必须提交到<i>一个GitHub仓库</i>，该仓库最终将包含你的应用的全部源代码。本章节的每一节都会有模型解决方案，你可以用它来填补不完整的提交。这一部分的结构是基于这样的想法，即随着你在材料中的进展，你会开发你的应用。所以<i>不要</i>等到练习时才开始开发。相反，随着教材的进展，以同样的速度开发你的应用。
 
 <!-- This part will heavily rely on concepts covered in the previous parts. Before starting this part you will need basic knowledge of JavaScript, React and GraphQL. Deep knowledge of server-side development is not required and all the server-side code is provided for you. However, we will be making network requests from your React Native applications, for example, using GraphQL queries. The recommended parts to complete before this part are [part 1](/en/part1), [part 2](/en/part2), [part 5](/en/part5), [part 7](/en/part7) and [part 8](/en/part8).-->
- 本章节将严重依赖前几部分所涉及的概念。在开始这部分之前，你需要有JavaScript、React和GraphQL的基本知识。不需要深层次的服务器端开发知识，所有的服务器端代码都为你提供。然而，我们将从你的React Native应用中提出网络请求，例如，使用GraphQL查询。在这部分之前推荐完成的部分是[第1章节](/en/part1)、[第2章节](/en/part2)、[第5章节](/en/part5)、[第7章节](/en/part7)和[第8章节](/en/part8) 。
+ 本章节将严重依赖前几部分所涉及的概念。在开始这部分之前，你需要有JavaScript、React和GraphQL的基本知识。不需要深层次的服务器端开发知识，所有的服务器端代码都为你提供。然而，我们将从你的React Native应用中提出网络请求，例如，使用GraphQL查询。在这部分之前推荐完成的部分是[第1章节](/zh/part1)、[第2章节](/zh/part2)、[第5章节](/zh/part5)、[第7章节](/zh/part7)和[第8章节](/zh/part8) 。
 
 ### Submitting exercises and earning credits
 

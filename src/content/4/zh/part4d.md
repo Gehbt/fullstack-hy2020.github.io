@@ -413,7 +413,7 @@ const errorHandler = (error, request, response, next) => {
 ### Exercises 4.15.-4.23.
 
 <!-- In the next exercises, basics of user management will be implemented for the Bloglist application. The safest way is to follow the story from part 4 chapter [User administration](/en/part4/user_administration) to the chapter [Token-based authentication](/en/part4/token_authentication). You can of course also use your creativity.-->
- 在接下来的练习中，将为Bloglist应用实现用户管理的基础知识。最安全的方法是从第四章节的[用户管理](/en/part4/user_administration)到[基于令牌的认证](/en/part4/token_authentication)这一章的故事。当然，你也可以发挥你的创造力。
+ 在接下来的练习中，将为Bloglist应用实现用户管理的基础知识。最安全的方法是从第四章节的[用户管理](/zh/part4/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86)到[基于令牌的认证](/zh/part4/%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81)这一章的故事。当然，你也可以发挥你的创造力。
 
 <!-- **One more warning:** If you notice you are mixing async/await and _then_ calls, it is 99% certain you are doing something wrong. Use either or, never both.-->
  **还有一个警告：**如果你注意到你在混合使用async/await和_then_调用，那么99%肯定是你做错了什么。使用其中之一，而不是同时使用。
@@ -424,7 +424,7 @@ const errorHandler = (error, request, response, next) => {
  实现一种创建新用户的方法，通过HTTP POST-request来解决<i>api/users</i>。用户有<i>用户名、密码和姓名</i>。
 
 <!-- Do not save passwords to the database as clear text, but use the <i>bcrypt</i> library like we did in part 4 chapter [Creating new users](/en/part4/user_administration#creating-users).-->
- 不要将密码以明文形式保存到数据库中，而是使用<i>bcrypt</i>库，就像我们在第四章节[创建新用户](/en/part4/user_administration#creating-users)中所做的那样。
+ 不要将密码以明文形式保存到数据库中，而是使用<i>bcrypt</i>库，就像我们在第四章节[创建新用户](/zh/part4/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86#creating-users)中所做的那样。
 
 <!-- **NB** Some Windows users have had problems with <i>bcrypt</i>. If you run into problems, remove the library with command-->
  **NB** 一些Windows用户在使用<i>bcrypt</i>时遇到问题。如果你遇到问题，请用命令删除该库
@@ -453,7 +453,7 @@ npm uninstall bcrypt
  如果创建了无效的用户，该操作必须以一个合适的状态代码和某种错误信息来回应。
 
 <!-- **NB** Do not test password restrictions with Mongoose validations. It is not a good idea because the password received by the backend and the password hash saved to the database are not the same thing. The password length should be validated in the controller like we did in [part 3](/en/part3/node_js_and_express) before using Mongoose validation.-->
- **NB** 不要用Mongoose验证来测试密码限制。这不是一个好主意，因为后端收到的密码和保存在数据库中的密码哈希值不是一回事。在使用Mongoose验证之前，应该像我们在[第3章节](/en/part3/node_js_and_express)中那样在控制器中验证密码长度。
+ **NB** 不要用Mongoose验证来测试密码限制。这不是一个好主意，因为后端收到的密码和保存在数据库中的密码哈希值不是一回事。在使用Mongoose验证之前，应该像我们在[第3章节](/zh/part3/node_js_%E4%B8%8E_express)中那样在控制器中验证密码长度。
 
 <!-- Also, implement tests which check that invalid users are not created and invalid add user operation returns a suitable status code and error message.-->
  同时，实施测试，检查无效的用户是否被创建，无效的添加用户操作是否返回合适的状态代码和错误信息。
@@ -481,7 +481,7 @@ npm uninstall bcrypt
 #### 4.18: bloglist expansion, step6
 
 <!-- Implement token-based authentication according to part 4 chapter [Token authentication](/en/part4/token_authentication).-->
- 根据第四章节[令牌认证](/en/part4/token_authentication)实施基于令牌的认证。
+ 根据第四章节[令牌认证](/zh/part4/%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81)实施基于令牌的认证。
 
 #### 4.19: bloglist expansion, step7
 
@@ -491,10 +491,10 @@ npm uninstall bcrypt
 #### 4.20*: bloglist expansion, step8
 
 <!-- [This example](/en/part4/token_authentication) from part 4 shows taking the token from the header with the _getTokenFrom_ helper function.-->
- [这个例子](/en/part4/token_authentication)来自第四章节，显示了用_getTokenFrom_辅助函数从头文件中获取令牌。
+ [这个例子](/zh/part4/%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81)来自第四章节，显示了用_getTokenFrom_辅助函数从头文件中获取令牌。
 
 <!-- If you used the same solution, refactor taking the token to a [middleware](/en/part3/node_js_and_express#middleware). The middleware should take the token from the <i>Authorization</i> header and place it to the <i>token</i> field of the <i>request</i> object.-->
- 如果你使用了相同的解决方案，请将获取令牌重构为一个[中间件](/en/part3/node_js_and_express#middleware)。中间件应该从<i>Authorization</i>头中获取令牌，并将其放到<i>request</i>对象的<i>token</i>字段中。
+ 如果你使用了相同的解决方案，请将获取令牌重构为一个[中间件](/zh/part3/node_js_%E4%B8%8E_express#middleware)。中间件应该从<i>Authorization</i>头中获取令牌，并将其放到<i>request</i>对象的<i>token</i>字段中。
 
 <!-- In other words, if you register this middleware in the <i>app.js</i> file before all routes-->
 换句话说，如果你在所有路由之前的<i>app.js</i>文件中注册了这个中间件
@@ -514,7 +514,7 @@ blogsRouter.post('/', async (request, response) => {
 ```
 
 <!-- Remember that a normal [middleware](/en/part3/node_js_and_express#middleware) is a function with three parameters, that at the end calls the last parameter <i>next</i> in order to move the control to next middleware:-->
- 记住，一个正常的[中间件](/en/part3/node_js_and_express#middleware)是一个有三个参数的函数，在最后调用最后一个参数<i>next</i>，以便将控制权转移到下一个中间件。
+ 记住，一个正常的[中间件](/zh/part3/node_js_%E4%B8%8E_express#middleware)是一个有三个参数的函数，在最后调用最后一个参数<i>next</i>，以便将控制权转移到下一个中间件。
 
 ```js
 const tokenExtractor = (request, response, next) => {
@@ -616,57 +616,5 @@ router.post('/', userExtractor, async (request, response) => {
 
 <!-- This is the last exercise for this part of the course and it's time to push your code to GitHub and mark all of your finished exercises to the [exercise submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).-->
  这是这部分课程的最后一个练习，是时候把你的代码推送到GitHub，并把你所有完成的练习标记到[练习提交系统](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)。
-
-<!---
-<!-- note left of user-->
-用户左侧的注释
-<!--   user fills in login form with-->
-用户填写登录表，填写内容为
-<!--   username and password-->
-用户名和密码
-<!-- end note-->
-结束说明
-<!-- user -> browser: login button pressed-->
-用户->浏览器：按了登录按钮
-
-<!-- browser -> backend: HTTP POST /api/login { username, password }-->
-浏览器 -> 后台。HTTP POST /api/login { username, password }。
-<!-- note left of backend-->
-后端左侧注释
-<!--   backend generates TOKEN that identifies user-->
-后端生成识别用户的TOKEN
-<!-- end note-->
-结束注释
-<!-- backend -> browser: TOKEN returned as message body-->
-后端->浏览器。TOKEN作为信息主体返回
-<!-- note left of browser-->
-浏览器左边的注释
-<!--   browser saves TOKEN-->
-浏览器保存TOKEN
-<!-- end note-->
-结束说明
-<!-- note left of user-->
-用户左边的注释
-<!--   user creates a note-->
-用户创建一个注释
-<!-- end note-->
-结束备注
-<!-- user -> browser: create note button pressed-->
-用户->浏览器：按了创建笔记的按钮
-<!-- browser -> backend: HTTP POST /api/notes { content } TOKEN in header-->
- 浏览器 -> 后台。HTTP POST /api/notes { content }TOKEN在标题中
-<!-- note left of backend-->
-后端左侧的注释
-<!--   backend identifies userfrom the TOKEN-->
-后端从TOKEN中识别用户
-<!-- end note-->
-结束注释
-
-<!-- backend -> browser: 201 created-->
-后端->浏览器。201创建
-
-<!-- user -> user:-->
-用户->用户。
- -->
 
 </div>

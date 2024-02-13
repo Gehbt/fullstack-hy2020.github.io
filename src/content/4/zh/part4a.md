@@ -9,7 +9,7 @@ lang: zh
 
 
 <!-- Let's continue our work on the backend of the notes application we started in [part 3](/en/part3).-->
- 让我们继续我们在[第三章节](/en/part3)中开始的笔记应用的后端工作。
+ 让我们继续我们在[第三章节](/zh/part3)中开始的笔记应用的后端工作。
 
 
 ### Project structure
@@ -865,7 +865,7 @@ describe('total likes', () => {
  如果定义你自己的测试输入列表的博客是太多的工作，你可以使用现成的列表[这里](https://raw.githubusercontent.com/fullstack-hy2020/misc/master/blogs_for_test.md)。
 
 <!-- You are bound to run into problems while writing tests. Remember the things that we learned about [debugging](/en/part3/saving_data_to_mongo_db#debugging-node-applications) in part 3. You can print things to the console with _console.log_ even during test execution. It is even possible to use the debugger while running tests, you can find instructions for that [here](https://jestjs.io/docs/en/troubleshooting).-->
-在编写测试时，你一定会遇到问题。记住我们在第三章节学到的关于[调试](/en/part3/saving_data_to_mongo_db#debugging-node-applications)的东西。你可以用_console.log_打印东西到控制台，甚至在测试执行期间。甚至可以在运行测试时使用调试器，你可以找到这方面的说明[这里](https://jestjs.io/docs/en/troubleshooting)。
+在编写测试时，你一定会遇到问题。记住我们在第三章节学到的关于[调试](/zh/part3/%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%85%A5_mongo_db#debugging-node-applications)的东西。你可以用_console.log_打印东西到控制台，甚至在测试执行期间。甚至可以在运行测试时使用调试器，你可以找到这方面的说明[这里](https://jestjs.io/docs/en/troubleshooting)。
 
 <!-- **NB:** if some test is failing, then it is recommended to only run that test while you are fixing the issue. You can run a single test with the [only](https://jestjs.io/docs/api#testonlyname-fn-timeout) method.-->
  **NB:** 如果某些测试失败了，那么建议在修复问题的时候只运行该测试。你可以用[only](https://jestjs.io/docs/api#testonlyname-fn-timeout)的方法运行一个测试。

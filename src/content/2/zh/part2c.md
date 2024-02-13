@@ -8,7 +8,7 @@ lang: zh
 <div class="content">
 
 <!-- For a while now we have only been working on "frontend", i.e. client-side (browser) functionality. We will begin working on "backend", i.e. server-side functionality in the [third part](/en/part3) of this course. Nonetheless, we will now take a step in that direction by familiarizing ourselves with how code executing in the browser communicates with the backend.-->
- 一段时间以来，我们只致力于 "前端"，即客户端（浏览器）功能。我们将在本课程的[第三章节](/en/part3)中开始研究 "后端"，即服务器端的功能。尽管如此，我们现在将朝着这个方向迈出一步，熟悉在浏览器中执行的代码是如何与后端通信的。
+ 一段时间以来，我们只致力于 "前端"，即客户端（浏览器）功能。我们将在本课程的[第三章节](/zh/part3)中开始研究 "后端"，即服务器端的功能。尽管如此，我们现在将朝着这个方向迈出一步，熟悉在浏览器中执行的代码是如何与后端通信的。
 
 <!-- Let's use a tool meant to be used during software development called [JSON Server](https://github.com/typicode/json-server) to act as our server.-->
  让我们使用一个在软件开发过程中使用的工具，叫做[JSON服务器](https://github.com/typicode/json-server)来作为我们的服务器。
@@ -69,7 +69,7 @@ npx json-server --port 3001 --watch db.json
  json-server将所有数据存储在<i>db.json</i>文件中，该文件位于服务器上。在现实世界中，数据会被存储在某种数据库中。然而，json-server是一个方便的工具，它能够在开发阶段使用服务器端的功能，而不需要对其进行任何编程。
 
 <!-- We will get familiar with the principles of implementing server-side functionality in more detail in [part 3](/en/part3) of this course.-->
- 我们将在本课程的[第三章节](/en/part3)中更详细地熟悉实现服务器端功能的原则。
+ 我们将在本课程的[第三章节](/zh/part3)中更详细地熟悉实现服务器端功能的原则。
 
 ### The browser as a runtime environment
 
@@ -283,7 +283,7 @@ npm run server
 ```
 
 <!-- We will get more familiar with the _npm_ tool in the [third part of the course](/en/part3).-->
- 我们将在[课程的第三章节](/en/part3)中更加熟悉_npm_工具。
+ 我们将在[课程的第三章节](/zh/part3)中更加熟悉_npm_工具。
 
 <!-- **NB** The previously started json-server must be terminated before starting a new one; otherwise there will be trouble:-->
  **NB** 在启动新的json-server之前，必须先终止之前启动的json-server；否则会有麻烦。

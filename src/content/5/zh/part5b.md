@@ -149,7 +149,7 @@ const App = () => {
 
 
 <!-- The visibility of the component is defined by giving the component an [inline](/en/part2/adding_styles_to_react_app#inline-styles) style rule, where the value of the [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) property is <i>none</i> if we do not want the component to be displayed:-->
- 组件的可见性是通过给组件一个[inline](/en/part2/adding_styles_to_react_app#inline-styles)样式规则来定义的，其中[display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)属性的值是<i>none</i>如果我们不希望组件被显示。
+ 组件的可见性是通过给组件一个[inline](/zh/part2/%E7%BB%99_react%E5%BA%94%E7%94%A8%E5%8A%A0%E7%82%B9%E6%A0%B7%E5%BC%8F#inline-styles)样式规则来定义的，其中[display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)属性的值是<i>none</i>如果我们不希望组件被显示。
 
 ```js
 const hideWhenVisible = { display: loginVisible ? 'none' : '' }
@@ -621,7 +621,7 @@ const Togglable = () => ...
  图中所示的应用有一点额外的CSS来改善其外观。
 
 <!-- It is easy to add styles to the application as shown in part 2 using [inline](/en/part2/adding_styles_to_react_app#inline-styles) styles:-->
- 如第二章节所示，使用[inline](/en/part2/adding_styles_to_react_app#inline-styles)样式很容易为应用添加样式。
+ 如第二章节所示，使用[inline](/zh/part2/%E7%BB%99_react%E5%BA%94%E7%94%A8%E5%8A%A0%E7%82%B9%E6%A0%B7%E5%BC%8F#inline-styles)样式很容易为应用添加样式。
 
 ```js
 const Blog = ({ blog }) => {
@@ -789,7 +789,7 @@ LoginForm.propTypes = {
 ### ESlint
 
 <!-- In part 3 we configured the [ESlint](/en/part3/validation_and_es_lint#lint) code style tool to the backend. Let's take ESlint to use in the frontend as well.-->
- 在第三章节，我们将[ESlint](/en/part3/validation_and_es_lint#lint)代码风格工具配置到后台。让我们把ESlint也用在前台。
+ 在第三章节，我们将[ESlint](/zh/part3/es_lint%E4%B8%8E%E4%BB%A3%E7%A0%81%E6%A3%80%E6%9F%A5#lint)代码风格工具配置到后台。让我们把ESlint也用在前台。
 
 <!-- Create-react-app has installed ESlint to the project by default, so all that's left for us to do is to define our desired configuration in the <i>.eslintrc.js</i> file.-->
  Create-react-app已经默认安装了ESlint到项目中，所以我们要做的就是在<i>.eslintrc.js</i>文件中定义我们想要的配置。

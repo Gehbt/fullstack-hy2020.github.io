@@ -554,7 +554,7 @@ module.exports = mongoose.model('Note', noteSchema) // highlight-line
 ```
 
 <!-- Defining Node [modules](https://nodejs.org/docs/latest-v8.x/api/modules.html) differs slightly from the way of defining [ES6 modules](/en/part2/rendering_a_collection_modules#refactoring-modules) in part 2.-->
- 定义Node的[模块](https://nodejs.org/docs/latest-v8.x/api/modules.html)与第二章节中定义[ES6模块](/en/part2/rendering_a_collection_modules#refactoring-modules)的方式略有不同。
+ 定义Node的[模块](https://nodejs.org/docs/latest-v8.x/api/modules.html)与第二章节中定义[ES6模块](/zh/part2/%E4%BB%8E%E6%B8%B2%E6%9F%93%E9%9B%86%E5%90%88%E5%88%B0%E6%A8%A1%E5%9D%97%E5%AD%A6%E4%B9%A0#refactoring-modules)的方式略有不同。
 
 <!-- The public interface of the module is defined by setting a value to the _module.exports_ variable. We will set the value to be the <i>Note</i> model. The other things defined inside of the module, like the variables _mongoose_ and _url_ will not be accessible or visible to users of the module.-->
  模块的公共接口是通过给_module.exports_变量设置一个值来定义的。我们将设置该值为<i>Note</i>模型。其他定义在模块内部的东西，如变量_mongoose_和_url_将不会被模块的用户访问或看到。
@@ -745,7 +745,7 @@ app.get('/api/notes/:id', (request, response) => {
  验证前台在修改后是否能工作。
 
 <!-- In the following exercises, write all Mongoose-specific code into its own module, just like we did in the chapter [Database configuration into its own module](/en/part3/saving_data_to_mongo_db#database-configuration-into-its-own-module).-->
- 在下面的练习中，把所有Mongoose特定的代码写进自己的模块，就像我们在[数据库配置进自己的模块](/en/part3/saving_data_to_mongo_db#database-configuration-into-its-own-module)一章中做的那样。
+ 在下面的练习中，把所有Mongoose特定的代码写进自己的模块，就像我们在[数据库配置进自己的模块](/zh/part3/%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%85%A5_mongo_db#database-configuration-into-its-own-module)一章中做的那样。
 
 #### 3.14: Phonebook database, step2
 

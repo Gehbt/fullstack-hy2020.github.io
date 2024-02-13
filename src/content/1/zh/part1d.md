@@ -382,7 +382,7 @@ const App = () => {
  <i>History</i>组件根据应用的状态渲染完全不同的React元素。这被称为<i>条件渲染</i>。
 
 <!-- React also offers many other ways of doing [conditional rendering](https://reactjs.org/docs/conditional-rendering.html). We will take a closer look at this in [part 2](/en/part2).-->
- React还提供了许多其他的方法来进行[条件渲染](https://reactjs.org/docs/conditional-rendering.html)。我们将在[第二章节](/en/part2)中仔细研究。
+ React还提供了许多其他的方法来进行[条件渲染](https://reactjs.org/docs/conditional-rendering.html)。我们将在[第二章节](/zh/part2)中仔细研究。
 
 <!-- Let's make one last modification to our application by refactoring it to use the _Button_ component that we defined earlier on:-->
  让我们对我们的应用做最后一次修改，使用我们先前定义的_Button_组件重构它。

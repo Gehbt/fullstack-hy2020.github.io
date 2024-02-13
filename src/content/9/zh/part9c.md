@@ -339,7 +339,7 @@ npm update chokidar
 ![](../../images/9/16a.png)
 
 <!-- You might also want to have a look at the <i>console</i> tab. If something fails, [part 3](/en/part3) of the course shows how the problem can be solved.-->
- 你可能还想看一下<i>console</i>标签。如果有什么地方失败了，课程的[第3章节](/en/part3)显示了如何解决这个问题。
+ 你可能还想看一下<i>console</i>标签。如果有什么地方失败了，课程的[第3章节](/zh/part3)显示了如何解决这个问题。
 
 </div>
 
@@ -401,9 +401,9 @@ npm update chokidar
  我们将把<i>index.ts</i>移到那里，并对npm脚本做必要的修改。
 
 <!-- We will place all [routers](/en/part4/structure_of_backend_application_introduction_to_testing), modules which are responsible for handling a set of specific resources such as <i>diaries</i>, under the directory <i>src/routes</i>.-->
- 我们将把所有[routers](/en/part4/structure_of_backend_application_introduction_to_testing)，负责处理一组特定资源的模块，如<i>diaries</i>，放在<i>src/routes</i>目录下。
+ 我们将把所有[routers](/zh/part4/%E4%BB%8E%E5%90%8E%E7%AB%AF%E7%BB%93%E6%9E%84%E5%88%B0%E6%B5%8B%E8%AF%95%E5%85%A5%E9%97%A8)，负责处理一组特定资源的模块，如<i>diaries</i>，放在<i>src/routes</i>目录下。
 <!-- This is a bit different than what we did  in [part 4](/en/part4), where we used directory <i>src/controllers</i>.-->
- 这与我们在[第4章节](/en/part4)中的做法有些不同，在那里我们使用目录<i>src/controllers</i>。
+ 这与我们在[第4章节](/zh/part4)中的做法有些不同，在那里我们使用目录<i>src/controllers</i>。
 
 <!-- The router taking care of all diary endpoints is in <i>src/routes/diaries.ts</i> and looks like this:-->
  负责所有日记端点的路由器在<i>src/routes/diaries.ts</i>，如下所示：

@@ -98,7 +98,7 @@ const App = (props) => {
  我们将_addNote_函数作为事件处理程序添加到表单元素中，当表单被提交时，点击提交按钮，该函数将被调用。
 
 <!-- We use the method discussed in [part 1](/en/part1/component_state_event_handlers#event-handling) for defining our event handler:-->
- 我们使用在[第一章节](/en/part1/component_state_event_handlers#event-handling)中讨论的方法来定义我们的事件处理器。
+ 我们使用在[第一章节](/zh/part1/%E7%BB%84%E4%BB%B6%E7%8A%B6%E6%80%81%EF%BC%8C%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86#event-handling)中讨论的方法来定义我们的事件处理器。
 
 ```js
 const addNote = (event) => {
@@ -270,7 +270,7 @@ const addNote = (event) => {
  首先，我们为笔记创建一个新的对象，叫做<em>noteObject</em>，它将从组件的<em>newNote</em>状态接收其内容。唯一的标识符<i>id</i>是根据笔记的总数生成的。这种方法适用于我们的应用，因为笔记永远不会被删除。在<em>Math.random()</em>函数的帮助下，我们的笔记有50%的机会被标记为重要。
 
 <!-- The new note is added to the list of notes using the [concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat) array method, introduced in [part 1](/en/part1/java_script#arrays):-->
- 使用[concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)数组方法将新笔记添加到笔记列表中，该方法在[第一章节](/en/part1/java_script#arrays)中介绍过。
+ 使用[concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)数组方法将新笔记添加到笔记列表中，该方法在[第一章节](/zh/part1/java_script#arrays)中介绍过。
 
 ```js
 setNotes(notes.concat(noteObject))
@@ -500,7 +500,7 @@ export default App
 ```
 
 <!-- It's also important to put what we learned in the [debugging React applications](/en/part1/a_more_complex_state_debugging_react_apps) chapter of part one into good use. The [React developer tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) extension especially, is incredibly useful for tracking changes that occur in the application's state.-->
- 把我们在第一章节的[调试React应用](/en/part1/a_more_complex_state_debugging_react_apps)一章中学到的东西好好利用也很重要。特别是[React开发者工具](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)扩展，对于跟踪应用的状态变化非常有用。
+ 把我们在第一章节的[调试React应用](/zh/part1/%E6%B7%B1%E5%85%A5_react_%E5%BA%94%E7%94%A8%E8%B0%83%E8%AF%95)一章中学到的东西好好利用也很重要。特别是[React开发者工具](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)扩展，对于跟踪应用的状态变化非常有用。
 
 <!-- After finishing this exercise your application should look something like this:-->
  在完成这个练习后，你的应用应该如下所示：
@@ -638,7 +638,7 @@ const App = () => {
 <!-- **NB**: You might run into problems in this exercise if you define your components "in the wrong place". Now would be a good time to rehearse-->
  **NB**: 如果你在 "错误的地方 "定义你的组件，你可能会在这个练习中遇到问题。现在是一个很好的时机来排练一下
 <!-- the chapter [do not define a component in another component](/en/part1/a_more_complex_state_debugging_react_apps#do-not-define-components-within-components)-->
- [不要在另一个组件中定义一个组件](/en/part1/a_more_complex_state_debugging_react_apps#do-not-define-components-within-components)这一章节。
+ [不要在另一个组件中定义一个组件](/zh/part1/%E6%B7%B1%E5%85%A5_react_%E5%BA%94%E7%94%A8%E8%B0%83%E8%AF%95#do-not-define-components-within-components)这一章节。
 <!-- from last part.-->
 来自最后一部分。
 

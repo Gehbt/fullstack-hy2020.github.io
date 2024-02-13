@@ -344,7 +344,7 @@ const App = () => {
 <h4>2.19: Phonebook step11</h4>
 
 <!-- Use the [improved error message](/en/part2/adding_styles_to_react_app#improved-error-message) example from part 2 as a guide to show a notification that lasts for a few seconds after a successful operation is executed (a person is added or a number is changed):-->
- 使用第二章节的[改进的错误信息](/en/part2/adding_styles_to_react_app#improved-error-message)的例子作为指导，在成功的操作被执行后（一个人被添加或一个数字被改变）显示一个持续几秒钟的通知。
+ 使用第二章节的[改进的错误信息](/zh/part2/%E7%BB%99_react%E5%BA%94%E7%94%A8%E5%8A%A0%E7%82%B9%E6%A0%B7%E5%BC%8F#improved-error-message)的例子作为指导，在成功的操作被执行后（一个人被添加或一个数字被改变）显示一个持续几秒钟的通知。
 
 ![](../../images/2/27e.png)
 

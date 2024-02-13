@@ -525,7 +525,7 @@ const noteReducer = (state = [], action) => {
 ```
 
 <!-- We create a copy of the note which importance has changed with the syntax [familiar from part 2](/en/part2/altering_data_in_server#changing-the-importance-of-notes), and replace the state with a new state containing all the notes which have not changed and the copy of the changed note <i>changedNote</i>.-->
- 我们用[熟悉的第二章节](/en/part2/altering_data_in_server#changing-the-importance-of-notes)的语法创建一个重要性已经改变的笔记的副本，并用一个包含所有没有改变的笔记和改变的笔记<i>changedNote</i>的副本的新状态取代该状态。
+ 我们用[熟悉的第二章节](/zh/part2/%E5%9C%A8%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%B0%86%E6%95%B0%E6%8D%AE_alert%E5%87%BA%E6%9D%A5#changing-the-importance-of-notes)的语法创建一个重要性已经改变的笔记的副本，并用一个包含所有没有改变的笔记和改变的笔记<i>changedNote</i>的副本的新状态取代该状态。
 
 <!-- Let's recap what goes on in the code. First, we search for a specific note object, the importance of which we want to change:-->
  让我们回顾一下代码中的内容。首先，我们搜索一个特定的笔记对象，我们想改变它的重要性。

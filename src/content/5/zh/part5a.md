@@ -9,7 +9,7 @@ lang: zh
 
 
 <!-- In the last two parts, we have mainly concentrated on the backend, and the frontend, that we developed in [part 2](/en/part2) does not yet support the user management we implemented to the backend in part 4.-->
- 在过去的两部分中，我们主要集中在后端，而我们在[第二章节](/en/part2)中开发的前端还不支持我们在第四章节中对后端实现的用户管理。
+ 在过去的两部分中，我们主要集中在后端，而我们在[第二章节](/zh/part2)中开发的前端还不支持我们在第四章节中对后端实现的用户管理。
 
 <!-- At the moment the frontend shows existing notes, and lets users change the state of a note from important to not important and vice versa. New notes cannot be added anymore because of the changes made to the backend in part 4: the backend now expects that a token verifying a user's identity is sent with the new note.-->
  目前，前台显示现有的笔记，并允许用户将一个笔记的状态从重要改为不重要，反之亦然。由于第四章节中对后台所做的修改，新的笔记不能再被添加：后台现在期望一个验证用户身份的令牌与新的笔记一起被发送。
@@ -104,7 +104,7 @@ export default App
 <!-- The login form is handled the same way we handled forms in-->
  登录表单的处理方式与我们在以下文章中处理表单的方式相同
 <!-- [part 2](/en/part2/forms). The app state has fields for  <i>username</i> and <i>password</i> to store the data from the form. The form fields have event handlers, which synchronize changes in the field to the state of the <i>App</i> component. The event handlers are simple: An object is given to them as a parameter, and they destructure the field <i>target</i> from the object and save its value to the state.-->
- [第二章节](/en/part2/forms)中处理表单的方式。应用状态有<i>用户名</i>和<i>密码</i>的字段来存储表单的数据。表单字段有事件处理程序，它将字段的变化与<i>App</i>组件的状态同步。事件处理程序很简单。一个对象被作为参数给他们，他们从对象中解构字段<i>target</i>并将其值保存到状态中。
+ [第二章节](/zh/part2/%E8%A1%A8%E5%8D%95)中处理表单的方式。应用状态有<i>用户名</i>和<i>密码</i>的字段来存储表单的数据。表单字段有事件处理程序，它将字段的变化与<i>App</i>组件的状态同步。事件处理程序很简单。一个对象被作为参数给他们，他们从对象中解构字段<i>target</i>并将其值保存到状态中。
 
 ```js
 ({ target }) => setUsername(target.value)
@@ -511,7 +511,7 @@ window.localStorage.getItem('name')
  我们仍然需要修改我们的应用，以便当我们进入页面时，应用检查是否已经在本地存储中找到了登录用户的详细资料。如果可以，这些细节就会被保存到应用的状态和<i>noteService</i>。
 
 <!-- The right way to do this is with an [effect hook](https://reactjs.org/docs/hooks-effect.html): a mechanism we first encountered in [part 2](/en/part2/getting_data_from_server#effect-hooks), and used to fetch notes from the server.-->
-正确的方法是使用[效果钩子](https://reactjs.org/docs/hooks-effect.html)：这是我们在[第二章节](/en/part2/getting_data_from_server#effect-hooks)中第一次遇到的机制，用来从服务器上获取笔记。
+正确的方法是使用[效果钩子](https://reactjs.org/docs/hooks-effect.html)：这是我们在[第二章节](/zh/part2/%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE#effect-hooks)中第一次遇到的机制，用来从服务器上获取笔记。
 
 <!-- We can have multiple effect hooks, so let's create a second one to handle the first loading of the page:-->
  我们可以有多个效果钩子，所以让我们创建第二个效果钩子来处理页面的第一次加载。
@@ -703,7 +703,7 @@ npm start
 ### A note on using local storage
 
 <!-- At the [end](/en/part4/token_authentication#problems-of-token-based-authentication) of the last part we mentioned that the challenge of the token based authentication is how to cope with the situation when the API access of the token holder to the API needs to be revoked.-->
- 在上一部分的[结尾](/en/part4/token_authentication#problems-of-token-based-authentication)我们提到，基于令牌的认证的挑战是如何应对令牌持有者对API的访问需要被撤销的情况。
+ 在上一部分的[结尾](/zh/part4/%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81#problems-of-token-based-authentication)我们提到，基于令牌的认证的挑战是如何应对令牌持有者对API的访问需要被撤销的情况。
 
 <!-- There are two solutions to the problem. The first one is to limit the validity period of a token. This forces the user to relogin to the app once the token has expired. The other approach is to save the validity information of each token to the backend database. This solution is often called a <i>server side session</i>.-->
 这个问题有两种解决方案。第一个是限制令牌的有效期限。这迫使用户在令牌过期后重新登录到应用。另一种方法是将每个令牌的有效期信息保存到后台数据库中。这种解决方案通常被称为<i>服务器端会话</i>。

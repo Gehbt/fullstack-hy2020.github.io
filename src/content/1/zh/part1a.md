@@ -86,7 +86,7 @@ ReactDOM.render(<App />, document.getElementById("root"))
  你很可能需要为你的其他项目做相同的事情。
 
 <!-- See [this](/en/part1/a_more_complex_state_debugging_react_apps/#a-note-on-react-version) for more about the version differences.-->
- 关于版本差异的更多信息，请参见[这里](/en/part1/a_more_complex_state_debugging_react_apps/#a-note-on-react-version)。
+ 关于版本差异的更多信息，请参见[这里](/zh/part1/%E6%B7%B1%E5%85%A5_react_%E5%BA%94%E7%94%A8%E8%B0%83%E8%AF%95/#a-note-on-react-version)。
 
 ### Component
 

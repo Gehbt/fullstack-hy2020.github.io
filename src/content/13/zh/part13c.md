@@ -447,7 +447,7 @@ module.exports = { tokenExtractor }
 ```
 
 <!-- As noted in [the end of Part 4](/en/part4/token_authentication#problems-of-token-based-authentication), the way we implement disabling users here is problematic. Whether or not the user is disabled is only checked at _login_, if the user has a token at the time the user is disabled, the user may continue to use the same token, since no lifetime has been set for the token and the disabled status of the user is not checked when creating notes.-->
- 正如在[第四章节的结尾](/en/part4/token_authentication#problems-of-token-based-authentication)所指出的，我们在这里实现禁用用户的方式是有问题的。用户是否被禁用只在_登录_时检查，如果用户在被禁用时有一个令牌，那么用户可以继续使用同一个令牌，因为没有为令牌设置寿命，而且在创建笔记时没有检查用户的禁用状态。
+ 正如在[第四章节的结尾](/zh/part4/%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81#problems-of-token-based-authentication)所指出的，我们在这里实现禁用用户的方式是有问题的。用户是否被禁用只在_登录_时检查，如果用户在被禁用时有一个令牌，那么用户可以继续使用同一个令牌，因为没有为令牌设置寿命，而且在创建笔记时没有检查用户的禁用状态。
 
 <!-- Before we proceed, let's make an npm script for the application, which allows us to undo the previous migration. After all, not everything always goes right the first time when developing migrations.-->
  在我们继续之前，让我们为应用做一个npm脚本，它允许我们撤销之前的迁移。毕竟，在开发迁移时，并不是第一次就能顺利进行的。
@@ -1601,7 +1601,7 @@ npx sequelize-cli model:generate --name User --attributes name:string,username:s
 #### Task 13.24.
 
 <!-- Grand finale: [towards the end of part 4](/en/part4/token_authentication#problems-of-token-based-authentication) there was mention of a token-criticality problem: if a user's access to the system is decided to be revoked, the user may still use the token in possession to use the system.-->
- 大结局：[在第四章节的末尾](/en/part4/token_authentication#problems-of-token-based-authentication)提到了一个token-criticality问题：如果一个用户对系统的访问被决定撤销，该用户仍然可以使用手中的token来使用该系统。
+ 大结局：[在第四章节的末尾](/zh/part4/%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81#problems-of-token-based-authentication)提到了一个token-criticality问题：如果一个用户对系统的访问被决定撤销，该用户仍然可以使用手中的token来使用该系统。
 
 <!-- The usual solution to this is to store a record of each token issued to the client in the backend database, and to check with each request whether access is still valid. In this case, the validity of the token can be removed immediately if necessary. Such a solution is often referred to as a <i>server-side session</i>.-->
  对此，通常的解决方案是在后台数据库中存储发给客户的每个令牌的记录，并在每次请求时检查访问是否仍然有效。在这种情况下，必要时可以立即删除令牌的有效性。这样的解决方案通常被称为<i>服务器端会话</i>。

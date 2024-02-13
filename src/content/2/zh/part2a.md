@@ -44,7 +44,7 @@ props value is [Object object]
 <!-- On the contrary, when you pass objects as distinct arguments separated by commas to _console.log_, like in our second example above, the content of the object is printed to the developer console as strings that are insightful.-->
  相反，当你把对象作为不同的参数用逗号隔开传递给_console.log_，就像我们上面的第二个例子，对象的内容被打印到开发者控制台，成为可检查的字符串。
 <!-- If necessary, read more about [debugging React-applications](/en/part1/a_more_complex_state_debugging_react_apps#debugging-react-applications).-->
- 如果有必要，请阅读更多关于[调试React-应用](/en/part1/a_more_complex_state_debugging_react_apps#debugging-react-applications)的内容。
+ 如果有必要，请阅读更多关于[调试React-应用](/zh/part1/%E6%B7%B1%E5%85%A5_react_%E5%BA%94%E7%94%A8%E8%B0%83%E8%AF%95#debugging-react-applications)的内容。
 
 ### Protip: Visual Studio Code snippets
 
@@ -97,10 +97,10 @@ props value is [Object object]
  基于去年的课程，事件处理有些难度。
 
 <!-- It's worth reading the revision chapter at the end of the previous part [event handlers revisited](/en/part1/a_more_complex_state_debugging_react_apps#event-handling-revisited), if it feels like your own knowledge on the topic needs some brushing up.-->
- 如果你觉得自己在这个主题上的知识需要精进一下的话，那么值得读一读上一章节[复习事件处理程序](/en/part1/a_more_complex_state_debugging_react_apps#event-handling-revisited)最后的修订章节。
+ 如果你觉得自己在这个主题上的知识需要精进一下的话，那么值得读一读上一章节[复习事件处理程序](/zh/part1/%E6%B7%B1%E5%85%A5_react_%E5%BA%94%E7%94%A8%E8%B0%83%E8%AF%95#event-handling-revisited)最后的修订章节。
 
 <!-- Passing event handlers to the child components of the <i>App</i> component has raised some questions. A small revision on the topic can be found [here](/en/part1/a_more_complex_state_debugging_react_apps#passing-event-handlers-to-child-components).-->
- 将事件处理程序传递给<i>App</i>组件的子组件，引起了一些问题。关于这个话题的小复习可以在[这里](/en/part1/a_more_complex_state_debugging_react_apps#passing-event-handlers-to-child-components)找到。
+ 将事件处理程序传递给<i>App</i>组件的子组件，引起了一些问题。关于这个话题的小复习可以在[这里](/zh/part1/%E6%B7%B1%E5%85%A5_react_%E5%BA%94%E7%94%A8%E8%B0%83%E8%AF%95#passing-event-handlers-to-child-components)找到。
 
 ### Rendering Collections
 
@@ -441,7 +441,7 @@ const App = ({ notes }) => { //highlight-line
 ```
 
 <!-- If you have forgotten what destructuring means and how it works, please review the [section on destructuring](/en/part1/component_state_event_handlers#destructuring).-->
- 如果你忘记了解构是什么意思以及它是如何工作的，请复习一下一下[解构部分](/en/part1/component_state_event_handlers#destructuring) 。
+ 如果你忘记了解构是什么意思以及它是如何工作的，请复习一下一下[解构部分](/zh/part1/%E7%BB%84%E4%BB%B6%E7%8A%B6%E6%80%81%EF%BC%8C%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86#destructuring) 。
 
 <!-- We'll separate displaying a single note into its own component <i>Note</i>:-->
  我们将把显示一个笔记分离成独立的组件<i>Note</i>。

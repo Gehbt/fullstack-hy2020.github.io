@@ -28,7 +28,7 @@ lang: zh
  我们在[前一部分](/en/part7/react_router)中介绍的[React Router's](https://reactrouter.com/en/main/start/tutorial)api也是部分基于[hook](https://reacttraining.com/react-router/web/api/Hooks)。它的钩子可以用来访问url参数和_navigation_对象，这允许以编程方式操纵浏览器的url。
 
 <!-- As mentioned in [part 1](/en/part1/a_more_complex_state_debugging_react_apps#rules-of-hooks), hooks are not normal functions, and when using those we have to adhere to certain [rules or limitations](https://reactjs.org/docs/hooks-rules.html). Let's recap the rules of using hooks, copied verbatim from the official React documentation:-->
- 正如在[第一章节](/en/part1/a_more_complex_state_debugging_react_apps#rules-of-hooks)中提到的，钩子不是普通的函数，在使用这些钩子时，我们必须遵守某些[规则或限制](https://reactjs.org/docs/hooks-rules.html)。让我们回顾一下使用钩子的规则，这些规则是逐字复制自React官方文档。
+ 正如在[第一章节](/zh/part1/%E6%B7%B1%E5%85%A5_react_%E5%BA%94%E7%94%A8%E8%B0%83%E8%AF%95#rules-of-hooks)中提到的，钩子不是普通的函数，在使用这些钩子时，我们必须遵守某些[规则或限制](https://reactjs.org/docs/hooks-rules.html)。让我们回顾一下使用钩子的规则，这些规则是逐字复制自React官方文档。
 
 <!-- **Don’t call Hooks inside loops, conditions, or nested functions.** Instead, always use Hooks at the top level of your React function.-->
  **不要在循环、条件或嵌套函数中调用钩子。**相反，总是在React函数的顶层使用钩子。
@@ -59,11 +59,11 @@ lang: zh
 
 
 <!-- Custom hooks are regular JavaScript functions that can use any other hooks, as long as they adhere to the [rules of hooks](/en/part1/a_more_complex_state_debugging_react_apps#rules-of-hooks). Additionally, the name of custom hooks must start with the word _use_.-->
- 自定义钩子是普通的JavaScript函数，可以使用任何其他钩子，只要它们遵守[钩子规则](/en/part1/a_more_complex_state_debugging_react_apps#rules-of-hooks)。此外，自定义钩子的名称必须以_use_这个词开头。
+ 自定义钩子是普通的JavaScript函数，可以使用任何其他钩子，只要它们遵守[钩子规则](/zh/part1/%E6%B7%B1%E5%85%A5_react_%E5%BA%94%E7%94%A8%E8%B0%83%E8%AF%95#rules-of-hooks)。此外，自定义钩子的名称必须以_use_这个词开头。
 
 
 <!-- We implemented a counter application in [part 1](/en/part1/component_state_event_handlers#event-handling) that can have its value incremented, decremented, or reset. The code of the application is as follows:-->
- 我们在[第一章节](/en/part1/component_state_event_handlers#event-handling)中实现了一个计数器应用，它的值可以递增、递减或重置。该应用的代码如下。
+ 我们在[第一章节](/zh/part1/%E7%BB%84%E4%BB%B6%E7%8A%B6%E6%80%81%EF%BC%8C%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86#event-handling)中实现了一个计数器应用，它的值可以递增、递减或重置。该应用的代码如下。
 
 ```js
 import { useState } from 'react'
@@ -464,7 +464,7 @@ const App = () => {
 #### 7.7: country hook
 
 <!-- Let's return to the exercises [2.12-14](/en/part2/getting_data_from_server#exercises-2-11-2-14).-->
- 让我们回到练习[2.12-14](/en/part2/getting_data_from_server#exercises-2-11-2-14)。
+ 让我们回到练习[2.12-14](/zh/part2/%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE#exercises-2-11-2-14)。
 
 <!-- Use the code from https://github.com/fullstack-hy2020/country-hook as your starting point.-->
  使用https://github.com/fullstack-hy2020/country-hook 中的代码作为你的出发点。

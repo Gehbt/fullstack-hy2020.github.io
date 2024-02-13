@@ -18,7 +18,7 @@ lang: zh
  json-server并不完全符合教科书[定义](https://en.wikipedia.org/wiki/Representational_state_transfer)提供的REST API的描述，但其他大多数声称是RESTful的API也不符合。
 
 <!-- We will take a closer look at REST in the [next part](/en/part3) of the course. But it's important to familiarize ourselves at this point with some of the [conventions](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services) used by json-server and REST APIs in general. In particular, we will be taking a look at the conventional use of [routes](https://github.com/typicode/json-server#routes), aka URLs and HTTP request types, in REST.-->
- 我们将在课程的[下一部分](/en/part3)中仔细研究REST。但是，在这一点上，我们有必要熟悉json-server和REST APIs一般使用的一些[约定](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services)。特别是，我们将看看REST中[路由](https://github.com/typicode/json-server#routes)的常规使用，也就是URL和HTTP请求类型。
+ 我们将在课程的[下一部分](/zh/part3)中仔细研究REST。但是，在这一点上，我们有必要熟悉json-server和REST APIs一般使用的一些[约定](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services)。特别是，我们将看看REST中[路由](https://github.com/typicode/json-server#routes)的常规使用，也就是URL和HTTP请求类型。
 
 ### REST
 
@@ -107,7 +107,7 @@ addNote = event => {
 ```
 
 <!-- The new note returned by the backend server is added to the list of notes in our application's state in the customary way of using the <em>setNotes</em> function and then resetting the note creation form. An [important detail](/en/part1/a_more_complex_state_debugging_react_apps#handling-arrays) to remember is that the <em>concat</em> method does not change the component's original state, but instead creates a new copy of the list.-->
- 后台服务器返回的新笔记被添加到我们应用的状态中的笔记列表中，习惯的方法是使用<em>setNotes</em>函数，然后重设笔记创建表单。一个需要记住的[重要细节](/en/part1/a_more_complex_state_debugging_react_apps#handling-arrays)是，<em>concat</em>方法并不改变组件的原始状态，而是创建一个新的列表副本。
+ 后台服务器返回的新笔记被添加到我们应用的状态中的笔记列表中，习惯的方法是使用<em>setNotes</em>函数，然后重设笔记创建表单。一个需要记住的[重要细节](/zh/part1/%E6%B7%B1%E5%85%A5_react_%E5%BA%94%E7%94%A8%E8%B0%83%E8%AF%95#handling-arrays)是，<em>concat</em>方法并不改变组件的原始状态，而是创建一个新的列表副本。
 
 <!-- Once the data returned by the server starts to have an effect on the behavior of our web applications, we are immediately faced with a whole new set of challenges arising from, for instance, the asynchronicity of communication. This necessitates new debugging strategies, console logging and other means of debugging become increasingly more important. We must also develop a sufficient understanding of the principles of both the JavaScript runtime and React components. Guessing won't be enough.-->
  一旦服务器返回的数据开始对我们的Web应用的行为产生影响，我们就会立即面临一系列新的挑战，例如，通信的非同步性。这就需要新的调试策略，控制台记录和其他调试手段变得越来越重要。我们还必须对JavaScript运行时和React组件的原理有足够的了解。猜测是不够的。
@@ -307,7 +307,7 @@ map方法通过将旧数组中的每个项目映射到新数组中的一个项�
 
 
 <!-- The <i>App</i> component has become somewhat bloated after adding the code for communicating with the backend server. In the spirit of the [single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), we deem it wise to extract this communication into its own [module](/en/part2/rendering_a_collection_modules#refactoring-modules).-->
- 在添加了与后端服务器通信的代码后，<i>App</i>组件变得有些臃肿。本着[单一责任原则](https://en.wikipedia.org/wiki/Single_responsibility_principle)，我们认为将这种通信提取到自己的[模块](/en/part2/rendering_a_collection_modules#refactoring-modules)是明智的。
+ 在添加了与后端服务器通信的代码后，<i>App</i>组件变得有些臃肿。本着[单一责任原则](https://en.wikipedia.org/wiki/Single_responsibility_principle)，我们认为将这种通信提取到自己的[模块](/zh/part2/%E4%BB%8E%E6%B8%B2%E6%9F%93%E9%9B%86%E5%90%88%E5%88%B0%E6%A8%A1%E5%9D%97%E5%AD%A6%E4%B9%A0#refactoring-modules)是明智的。
 
 <!-- Let's create a <i>src/services</i> directory and add a file there called <i>notes.js</i>:-->
  让我们创建一个<i>src/services</i>目录，并在那里添加一个名为<i>notes.js</i>的文件。
@@ -692,7 +692,7 @@ const getAll = () => {
  应用应该能够优雅地处理这些类型的错误情况。除非用户碰巧打开了他们的控制台，否则他们无法知道错误确实发生了。在应用中可以看到错误的唯一方法是，点击按钮对注释的重要性没有影响。
 
 <!-- We had [previously](/en/part2/getting_data_from_server#axios-and-promises) mentioned that a promise can be in one of three different states. When an HTTP request fails, the associated promise is <i>rejected</i>. Our current code does not handle this rejection in any way.-->
- 我们[之前](/en/part2/getting_data_from_server#axios-and-promises)提到，一个promise可以处于三种不同的状态之一。当一个HTTP请求失败时，相关的promise会被<i>拒绝(rejected)</i>。我们目前的代码没有以任何方式处理这种拒绝。
+ 我们[之前](/zh/part2/%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE#axios-and-promises)提到，一个promise可以处于三种不同的状态之一。当一个HTTP请求失败时，相关的promise会被<i>拒绝(rejected)</i>。我们目前的代码没有以任何方式处理这种拒绝。
 
 <!-- The rejection of a promise is [handled](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) by providing the <em>then</em> method with a second callback function, which is called in the situation where the promise is rejected.-->
  被拒绝promise是通过提供带有第二个回调函数的<em>then</em>方法来[处理](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)，该函数在Promise对象被拒绝的情况下被调用。

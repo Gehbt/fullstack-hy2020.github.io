@@ -135,7 +135,7 @@ lang: zh
 
 #### Part 10 - Full Stack Web Development: React Native (2 cr, CSM14111)
 <!-- By submitting 25 exercises for part 10 of the course on React Native, you can earn two additional credits. More information about this part's prerequisites, exercise submission, and credits can be found in[part 10](/en/part10/introduction_to_react_native).-->
- 通过提交第10章节关于React Native课程的25道练习题，你可以获得两个额外的学分。关于这章节的先决条件、练习提交和学分的更多信息可以在[第10章节](/en/part10/introduction_to_react_native)找到。
+ 通过提交第10章节关于React Native课程的25道练习题，你可以获得两个额外的学分。关于这章节的先决条件、练习提交和学分的更多信息可以在[第10章节](/zh/part10/react_native_%E4%BB%8B%E7%BB%8D)找到。
 <!-- - Submit at least 25 exercises for part 10.-->
 
  - 为第10章节提交至少25道练习。
@@ -147,7 +147,7 @@ lang: zh
 #### Part 11 - Full Stack Web Development: Continuous Integration / Continuous Delivery (1 cr, CSM14112)
 
 <!-- By submitting all exercises for part 11 of the course on Continuous Integration/Delivery, you can earn one additional credit. More information about this part's prerequisites and exercise submission can be found in [part 11](/en/part11).-->
- 通过提交持续集成/交付课程第11章节的所有练习，你可以获得一个额外的学分。关于这部分的先决条件和练习提交的更多信息可以在[第11章节](/en/part11)中找到。
+ 通过提交持续集成/交付课程第11章节的所有练习，你可以获得一个额外的学分。关于这部分的先决条件和练习提交的更多信息可以在[第11章节](/zh/part11)中找到。
 <!-- - Submit all exercises for part 11.-->
 
  - 提交第11章节的所有练习。
@@ -159,7 +159,7 @@ lang: zh
 #### Part 12 - Full Stack Web Development: Containers (1 cr, CSM141084)
 
 <!-- By submitting all exercises for part 12 of the course on Container technology, you can earn one additional credit. More information about this part's prerequisites and exercise submission can be found in [part 12](/en/part12).-->
- 通过提交第12章节关于容器技术课程的所有练习，你可以获得一个额外的学分。关于这部分的先决条件和练习提交的更多信息可以在[第12章节](/en/part12)中找到。
+ 通过提交第12章节关于容器技术课程的所有练习，你可以获得一个额外的学分。关于这部分的先决条件和练习提交的更多信息可以在[第12章节](/zh/part12)中找到。
 <!-- - Submit all exercises for part 12.-->
 
  - 提交第12章节的所有练习。

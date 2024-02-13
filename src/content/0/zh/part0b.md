@@ -15,7 +15,7 @@ lang: zh
 相反，它展示了一些老旧的网络开发技术，这些技术在今天甚至可以被视作是<i>糟糕的实践</i>。
 
 <!-- Code will conform to contemporary best practices from  [part 1](/en/part1) onwards.-->
- 从[第一章节](/en/part1)开始，代码将符合现代开发的最佳实践。
+ 从[第一章节](/zh/part1)开始，代码将符合现代开发的最佳实践。
 
 <!-- Open the [example application](https://studies.cs.helsinki.fi/exampleapp) in your browser. Sometimes this takes a while.-->
 在浏览器中打开[示例应用](https://studies.cs.helsinki.fi/exampleapp)。有时打开需要等一会儿。
@@ -201,7 +201,7 @@ xhttp.open('GET', '/data.json', true)
 xhttp.send()
 ```
 <!-- The details of the code are not important right now, but some code has been included to spice up the images and the text. We will properly start coding in [part 1](/en/part1). The sample code in this part is actually not relevant at all to the coding techniques of this course.-->
- 代码的细节现在并不重要，穿插一些代码，是为了增加图像与文本的趣味性。我们将在[第一章](/en/part1)中正确地开始编码。这一章节的示例代码实际上与本课程的编码技术完全不相关。
+ 代码的细节现在并不重要，穿插一些代码，是为了增加图像与文本的趣味性。我们将在[第一章](/zh/part1)中正确地开始编码。这一章节的示例代码实际上与本课程的编码技术完全不相关。
 
 <!-- > Some might wonder why xhttp-object is used instead of the modern fetch. This is due to not wanting to go into promises at all yet, and the code having a secondary role in this part. We will return to modern ways to make requests to the server in part 2.-->
  > 有些人可能想问为什么要使用 xhttp 对象而不是使用现代的fetch方法。 这是因为我们不想引入 promise 的概念，而且代码在这一章节只是二等公民。 在第 2 章节中，我们将回过头来用更加现代的方式来向服务器发送请求。
@@ -598,7 +598,7 @@ notes.push({
 <!-- The application URLs reflect the old, carefree times. JSON data is fetched from the url <https://studies.cs.helsinki.fi/exampleapp/data.json> and new notes are sent to the URL <https://studies.cs.helsinki.fi/exampleapp/new_note>.-->
  应用的URL反映了古老的、无忧无虑的时代。JSON数据从URL <https://studies.cs.helsinki.fi/exampleapp/data.json>中获取，新的笔记被发送到URL <https://studies.cs.helsinki.fi/exampleapp/new_note>中。
 <!-- Nowadays URLs like these would not be considered acceptable, as they don't follow the generally acknowledged conventions of [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_Web_services) APIs, which we'll look into more in [part 3](/en/part3)-->
- 现在像这样的URL是不会被接受的，因为它们不遵循公认的[RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_Web_services)API的惯例，我们将在[第三章](/en/part3)中进一步研究。
+ 现在像这样的URL是不会被接受的，因为它们不遵循公认的[RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_Web_services)API的惯例，我们将在[第三章](/zh/part3)中进一步研究。
 
 <!-- The thing termed AJAX is now so commonplace that it's taken for granted. The term has faded into oblivion, and the new generation has not even heard of it.-->
  称为AJAX的东西现在已经非常普遍，以至于被认为是理所当然的。这个词已经被遗忘了，新生代甚至没有听说过它。

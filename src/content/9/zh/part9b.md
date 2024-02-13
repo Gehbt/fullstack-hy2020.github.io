@@ -42,7 +42,7 @@ npm install -g ts-node typescript
  我们也将采取这种方法。
 
 <!-- As we remember from [part 3](/en/part3), an npm project is set by running the command <i>npm init</i> in an empty directory. Then we can install the dependencies by running-->
- 正如我们在[第三章节](/en/part3)中所记得的，一个npm项目是通过在一个空目录中运行命令<i>npm init</i>来设置的。然后，我们可以通过运行
+ 正如我们在[第三章节](/zh/part3)中所记得的，一个npm项目是通过在一个空目录中运行命令<i>npm init</i>来设置的。然后，我们可以通过运行
 
 ```
 npm install --save-dev ts-node typescript
@@ -1193,6 +1193,6 @@ app.post('/calculate', (req, res) => {
  你也可能遇到规则<i>no-unsafe-member-access</i>和<i>no-unsafe-assignment</i>的麻烦。在这个练习中，这些规则可以被忽略。
 
 <!-- Note that you need to have a correct setup in order to get hold of the request body; see [part 3](/en/part3/node_js_and_express#receiving-data).-->
- 注意，你需要有一个正确的设置，以便掌握请求体；见[第三章节](/en/part3/node_js_and_express#receiving-data)。
+ 注意，你需要有一个正确的设置，以便掌握请求体；见[第三章节](/zh/part3/node_js_%E4%B8%8E_express#receiving-data)。
 
 </div>

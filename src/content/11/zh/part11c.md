@@ -11,7 +11,7 @@ lang: zh
  在写好了一个漂亮的应用之后，是时候考虑我们如何将其部署到真正的用户中去了。
 
 <!-- In [part 3](/en/part3/deploying_app_to_internet) of this course, we did this by simply <i>pushing the git repository</i> to the servers of the cloud provider [Heroku](https://www.heroku.com/home). It is pretty simple to release software in Heroku at least compared to many other types of hosting setups but it still contains risks: nothing prevents us from accidentally pushing broken code to production.-->
- 在本课程的[第三章节](/en/part3/deploying_app_to_internet)中，我们通过简单的<i>推送git仓库</i>到云提供商[Heroku](https://www.heroku.com/home)的服务器来实现。至少与许多其他类型的托管设置相比，在Heroku中发布软件是相当简单的，但它仍然包含风险：没有什么能阻止我们意外地将破损的代码推到生产中。
+ 在本课程的[第三章节](/zh/part3/%E6%8A%8A%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2%E5%88%B0%E7%BD%91%E4%B8%8A)中，我们通过简单的<i>推送git仓库</i>到云提供商[Heroku](https://www.heroku.com/home)的服务器来实现。至少与许多其他类型的托管设置相比，在Heroku中发布软件是相当简单的，但它仍然包含风险：没有什么能阻止我们意外地将破损的代码推到生产中。
 
 <!-- Next, we're going to look at the principles of making a deployment safely and some of the principles of deploying software on both a small and large scale.-->
  接下来，我们要看一下安全部署的原则，以及在小规模和大规模部署软件的一些原则。
@@ -85,7 +85,7 @@ lang: zh
 ### Exercises 11.10-11.12.
 
 <!-- Before going to the below exercises, you should setup your application in Heroku environment like the one we did in [part 3](/en/part3/deploying_app_to_internet#application-to-the-internet).-->
- 在进行下面的练习之前，你应该在Heroku环境中设置你的应用，就像我们在[第三章节](/en/part3/deploying_app_to_internet#application-to-the-internet)中所做的那样。
+ 在进行下面的练习之前，你应该在Heroku环境中设置你的应用，就像我们在[第三章节](/zh/part3/%E6%8A%8A%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2%E5%88%B0%E7%BD%91%E4%B8%8A#application-to-the-internet)中所做的那样。
 
 <!-- In contrast to part 3 now we <i>do not push the code</i> to Heroku ourselves, we let the Github Actions workflow do that for us!-->
  与第三章节相比，现在我们<i>不自己推送代码</i>到Heroku，我们让Github Actions工作流为我们做这件事!
@@ -128,7 +128,7 @@ ${{secrets.HEROKU_API_KEY}}
 ![](../../images/11/11.png)
 
 <!-- You can then try the app with a browser, but most likely you run into a problem. If we read carefully [the section 'Application to the Internet' in part 3](/en/part3/deploying_app_to_internet#application-to-the-internet) we notice that Heroku assumes that the repository has a file called <i>Procfile</i> that tells Heroku how to start the application.-->
- 然后你可以用浏览器试试这个应用，但很可能你会遇到一个问题。如果我们仔细阅读[第三章节的"应用到互联网"一节](/en/part3/deploying_app_to_internet#application-to-the-internet)，我们注意到Heroku假定版本库有一个叫做<i>Procfile</i>的文件，告诉Heroku如何启动应用。
+ 然后你可以用浏览器试试这个应用，但很可能你会遇到一个问题。如果我们仔细阅读[第三章节的"应用到互联网"一节](/zh/part3/%E6%8A%8A%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2%E5%88%B0%E7%BD%91%E4%B8%8A#application-to-the-internet)，我们注意到Heroku假定版本库有一个叫做<i>Procfile</i>的文件，告诉Heroku如何启动应用。
 
 <!-- So, add a proper Procfile and ensure that the application starts properly.-->
  所以，添加一个合适的Procfile，确保应用正常启动。

@@ -277,7 +277,7 @@ router.put('/:id', noteFinder, async (req, res) => {
 #### Task 13.7.
 
 <!-- Centralize the application error handling in middleware as in [part 3](/en/part3/saving_data_to_mongo_db#moving-error-handling-into-middleware). You can also enable middleware [express-async-errors](https://github.com/davidbanham/express-async-errors) as we did in [part 4](/en/part4/testing_the_backend#eliminating-the-try-catch).-->
- 在中间件中集中处理应用的错误，如[第3章节](/en/part3/saving_data_to_mongo_db#moving-error-handling-into-middleware)。你也可以像我们在[第4章节](/en/part4/testing_the_backend#eliminating-the-try-catch)中那样，启用中间件[express-async-errors](https://github.com/davidbanham/express-async-errors)。
+ 在中间件中集中处理应用的错误，如[第3章节](/zh/part3/%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%85%A5_mongo_db#moving-error-handling-into-middleware)。你也可以像我们在[第4章节](/zh/part4//%E6%B5%8B%E8%AF%95%E5%90%8E%E7%AB%AF%E5%BA%94%E7%94%A8#eliminating-the-try-catch)中那样，启用中间件[express-async-errors](https://github.com/davidbanham/express-async-errors)。
 
 <!-- The data returned in the context of an error message is not very important.-->
 在错误信息的上下文中返回的数据并不十分重要。
@@ -292,7 +292,7 @@ router.put('/:id', noteFinder, async (req, res) => {
 ### User management
 
 <!-- Next, let's add a database table <i>users</i> to the application, where the users of the application will be stored. In addition, we will add the ability to create users and token-based login as we implemented in [part 4](/en/part4/token_authentication). For simplicity, we will adjust the implementation so that all users will have the same password <i>secret</i>.-->
- 接下来，让我们为应用添加一个数据库表<i>users</i>，应用的用户将被存储在这里。此外，我们将添加创建用户和基于令牌的登录的功能，正如我们在[第4章节](/en/part4/token_authentication)中实现的那样。为了简单起见，我们将调整实现，使所有用户都有相同的密码<i>secret</i>。
+ 接下来，让我们为应用添加一个数据库表<i>users</i>，应用的用户将被存储在这里。此外，我们将添加创建用户和基于令牌的登录的功能，正如我们在[第4章节](/zh/part4/%E5%AF%86%E9%92%A5%E8%AE%A4%E8%AF%81)中实现的那样。为了简单起见，我们将调整实现，使所有用户都有相同的密码<i>secret</i>。
 
 <!-- The model defining users in the file <i>models/user.js</i> is straightforward-->
  在文件<i>models/user.js</i>中定义用户的模型是很简单的
@@ -582,7 +582,7 @@ FROM "users" AS "User" LEFT OUTER JOIN "notes" AS "Notes" ON "User". "id" = "Not
 ### Proper insertion of notes
 
 <!-- Let's change the note insertion by making it work the same as in [part 4](/en/part4), i.e. the creation of a note can only be successful if the request corresponding to the creation is accompanied by a valid token from login. The note is then stored in the list of notes created by the user identified by the token:-->
- 让我们改变笔记的插入，使其与[第4章节](/en/part4)中的工作相同，即只有当与创建相对应的请求伴随着来自登录的有效令牌时，笔记的创建才能成功。然后，该笔记被存储在由令牌识别的用户创建的笔记列表中。
+ 让我们改变笔记的插入，使其与[第4章节](/zh/part4)中的工作相同，即只有当与创建相对应的请求伴随着来自登录的有效令牌时，笔记的创建才能成功。然后，该笔记被存储在由令牌识别的用户创建的笔记列表中。
 
 ```js
 // highlight-start
@@ -770,7 +770,7 @@ Note.belongsTo(User)
  与材料中不同，现在不要阻止Sequelize为用户创建[时间戳](https://sequelize.org/master/manual/model-basics.html#timestamps) <i>created/at</i>和<i>updated/at</i>。
 
 <!-- All users can have the same password as the material. You can also choose to properly implement passwords as in [part 4](/en/part4/user_administration).-->
-所有用户都可以拥有与材料相同的密码。你也可以选择像[第4章节](/en/part4/user_administration)那样正确实现密码。
+所有用户都可以拥有与材料相同的密码。你也可以选择像[第4章节](/zh/part4/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86)那样正确实现密码。
 
 <!-- Implement the following routes-->
  实现以下路线

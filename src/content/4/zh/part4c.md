@@ -245,7 +245,7 @@ npm install bcrypt
 ```
 
 <!-- Creating new users happens in compliance with the RESTful conventions discussed in [part 3](/en/part3/node_js_and_express#rest), by making an HTTP POST request to the <i>users</i> path.-->
- 创建新的用户是按照[第三章节](/en/part3/node_js_and_express#rest)中讨论的RESTful惯例进行的，通过向<i>users</i>路径发出HTTP POST请求。
+ 创建新的用户是按照[第三章节](/node_js_%E4%B8%8E_express#rest)中讨论的RESTful惯例进行的，通过向<i>users</i>路径发出HTTP POST请求。
 
 <!-- Let's define a separate <i>router</i> for dealing with users in a new <i>controllers/users.js</i> file. Let's take the router into use in our application in the <i>app.js</i> file, so that it handles requests made to the <i>/api/users</i> url:-->
  让我们在一个新的<i>controllers/users.js</i>文件中定义一个单独的<i>router</i>来处理用户。让我们在<i>app.js</i>文件中的应用中使用这个路由器，这样它就可以处理向<i>/api/users</i>网址发出的请求。

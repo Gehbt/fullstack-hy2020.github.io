@@ -94,7 +94,7 @@ lang: zh
  你可能会注意到该项目包含一些破碎的测试和刷新错误。**我们将在后面的练习中解决这些问题。
 
 <!-- As you might remember from [part 3](/en/part3/deploying_app_to_internet#frontend-production-build), the React code <i>should not</i> be run in development mode once it is deployed in production. Try now the following-->
- 你可能还记得[第三章节](/en/part3/deploying_app_to_internet#frontend-production-build)，React代码<i>不应该</i>在开发模式下运行，一旦它被部署到生产中。现在试试下面的方法
+ 你可能还记得[第三章节](/zh/part3/%E6%8A%8A%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2%E5%88%B0%E7%BD%91%E4%B8%8A#frontend-production-build)，React代码<i>不应该</i>在开发模式下运行，一旦它被部署到生产中。现在试试下面的方法
 <!-- - create a production <i>build</i> of the project-->
  - 创建一个项目的生产<i>build</i>。
 <!-- - run the production version locally-->
@@ -380,7 +380,7 @@ jobs:
  代码中存在一些问题，你需要加以解决。打开工作流程的日志，调查一下哪里出了问题。
 
 <!-- A couple of hints. One of the errors is best to be fixed by specifying proper <i>env</i> for linting, see [here](/en/part3/validation_and_es_lint#lint) how it can be done . One of the complaints concerning <code>console.log</code> statement could be taken care of by simply silencing the rule for that specific line. Ask google how to do it.-->
- 有几个提示。其中一个错误最好通过为linting指定适当的<i>env</i>来解决，见[这里](/en/part3/validation_and_es_lint#lint)如何做。关于<code>console.log</code>语句的投诉之一，可以通过简单地沉默该特定行的规则来解决。问问google怎么做吧。
+ 有几个提示。其中一个错误最好通过为linting指定适当的<i>env</i>来解决，见[这里](/zh/part3/es_lint%E4%B8%8E%E4%BB%A3%E7%A0%81%E6%A3%80%E6%9F%A5#lint)如何做。关于<code>console.log</code>语句的投诉之一，可以通过简单地沉默该特定行的规则来解决。问问google怎么做吧。
 
 <!-- Make the necessary changes to the source code so that the lint workflow passes. Once you commit new code the workflow will run again and you will see updated output where all is green again:-->
  对源代码进行必要的修改，使lint工作流通过。一旦你提交了新的代码，工作流就会再次运行，你会看到更新的输出，所有的东西都是绿色的。

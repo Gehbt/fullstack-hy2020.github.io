@@ -179,7 +179,7 @@ afterAll(() => {
  我们的测试向<i>api/notes</i>网址发出HTTP GET请求，并验证该请求被响应，状态代码为200。该测试还验证了<i>Content-Type</i>头被设置为<i>application/json</i>，表明数据为所需格式。(如果你不熟悉<i>/application/json/</i>的RegEx语法，你可以了解更多[这里](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)。)
 
 <!-- The test contains some details that we will explore [a bit later on](/en/part4/testing_the_backend#async-await). The arrow function that defines the test is preceded by the <i>async</i> keyword and the method call for the <i>api</i> object is preceded by the <i>await</i> keyword. We will write a few tests and then take a closer look at this async/await magic. Do not concern yourself with them for now, just be assured that the example tests work correctly. The async/await syntax is related to the fact that making a request to the API is an <i>asynchronous</i> operation. The [Async/await syntax](https://jestjs.io/docs/asynchronous) can be used for writing asynchronous code with the appearance of synchronous code.-->
- 该测试包含了一些细节，我们将[稍后](/en/part4/testing_the_backend#async-await)进行探讨。定义测试的箭头函数前面有<i>async</i>关键字，对<i>api</i>对象的方法调用前面有<i>await</i>关键字。我们将写一些测试，然后仔细看看这个async/await的魔法。暂时不要关注它们，只需保证示例测试的正常工作。async/await语法与向API发出请求是一个<i>异步</i>操作的事实有关。[Async/await语法](https://jestjs.io/docs/asynchronous)可用于编写具有同步代码外观的异步代码。
+ 该测试包含了一些细节，我们将[稍后](/zh/part4/%E6%B5%8B%E8%AF%95%E5%90%8E%E7%AB%AF%E5%BA%94%E7%94%A8#async-await)进行探讨。定义测试的箭头函数前面有<i>async</i>关键字，对<i>api</i>对象的方法调用前面有<i>await</i>关键字。我们将写一些测试，然后仔细看看这个async/await的魔法。暂时不要关注它们，只需保证示例测试的正常工作。async/await语法与向API发出请求是一个<i>异步</i>操作的事实有关。[Async/await语法](https://jestjs.io/docs/asynchronous)可用于编写具有同步代码外观的异步代码。
 
 <!-- Once all the tests (there is currently only one) have finished running we have to close the database connection used by Mongoose. This can be easily achieved with the [afterAll](https://jestjs.io/docs/api#afterallfn-timeout) method:-->
  一旦所有的测试（目前只有一个）都运行完毕，我们必须关闭Mongoose使用的数据库连接。这可以通过[afterAll](https://jestjs.io/docs/api#afterallfn-timeout)方法轻松实现。
@@ -230,7 +230,7 @@ test('notes are returned as json', async () => {
  这第三个参数将超时设置为100000毫秒。一个长的超时确保我们的测试不会因为运行时间而失败。(对于基于性能或速度的测试来说，一个长的超时可能不是你想要的，但对于我们的测试例子来说，这很好）。
 
 <!-- One tiny but important detail: at the [beginning](/en/part4/structure_of_backend_application_introduction_to_testing#project-structure) of this part we extracted the Express application into the <i>app.js</i> file, and the role of the <i>index.js</i> file was changed to launch the application at the specified port with Node's built-in <i>http</i> object:-->
- 一个微小但重要的细节：在这部分的[开头](/en/part4/structure_of_backend_application_introduction_to_testing#project-structure)，我们将Express应用提取到<i>app.js</i>文件中，<i>index.js</i>文件的作用被改变为在指定端口用Node的内置<i>http</i>对象启动该应用。
+ 一个微小但重要的细节：在这部分的[开头](/zh/part4//%E4%BB%8E%E5%90%8E%E7%AB%AF%E7%BB%93%E6%9E%84%E5%88%B0%E6%B5%8B%E8%AF%95%E5%85%A5%E9%97%A8#project-structure)，我们将Express应用提取到<i>app.js</i>文件中，<i>index.js</i>文件的作用被改变为在指定端口用Node的内置<i>http</i>对象启动该应用。
 
 ```js
 const app = require('./app') // the actual Express app
@@ -1144,7 +1144,7 @@ beforeEach(async () => {
  一旦测试完成，重构路由处理程序，使用async/await语法而不是promises。
 
 <!-- Notice that you will have to make similar changes to the code that were made [in the material](/en/part4/testing_the_backend#test-environment), like defining the test environment so that you can write tests that use their own separate database.-->
- 注意，你将不得不对[材料中](/en/part4/testing_the_backend#test-environment)的代码进行类似的修改，比如定义测试环境，以便你可以编写使用自己独立数据库的测试。
+ 注意，你将不得不对[材料中](/zh/part4/%E6%B5%8B%E8%AF%95%E5%90%8E%E7%AB%AF%E5%BA%94%E7%94%A8#test-environment)的代码进行类似的修改，比如定义测试环境，以便你可以编写使用自己独立数据库的测试。
 
 <!-- **NB:** When running the tests, you may run into the following warning:-->
  **NB:** 当运行测试时，你可能会遇到以下警告。
@@ -1171,7 +1171,7 @@ beforeEach(async () => {
 ```
 
 <!-- **NB:** when you are writing your tests **<i>it is better to not execute all of your tests</i>**, only execute the ones you are working on. Read more about this [here](/en/part4/testing_the_backend#running-tests-one-by-one).-->
- **NB:**当你写你的测试时，**<i>最好不要执行你所有的测试</i>**，只执行你正在进行的测试。阅读更多关于这个的信息[这里](/en/part4/testing_the_backend#running-tests one-by-one)。
+ **NB:**当你写你的测试时，**<i>最好不要执行你所有的测试</i>**，只执行你正在进行的测试。阅读更多关于这个的信息[这里](/zh/part4/%E6%B5%8B%E8%AF%95%E5%90%8E%E7%AB%AF%E5%BA%94%E7%94%A8#running-tests-one-by-one)。
 
 #### 4.9*: Blog list tests, step2
 
@@ -1179,7 +1179,7 @@ beforeEach(async () => {
  编写一个测试，验证博客文章的唯一标识符属性是否被命名为<i>id</i>，默认情况下，数据库将该属性命名为<i>_id</i>。使用Jest's [toBeDefined](https://jestjs.io/docs/en/expect#tobedefined)匹配器可以很容易地验证一个属性的存在。
 
 <!-- Make the required changes to the code so that it passes the test. The [toJSON](/en/part3/saving_data_to_mongo_db#backend-connected-to-a-database) method discussed in part 3 is an appropriate place for defining the <i>id</i> parameter.-->
- 对代码进行必要的修改，使其通过测试。第3章节中讨论的[toJSON](/en/part3/saving_data_to_mongo_db#backend-connected-to-a-database)方法是定义<i>id</i>参数的一个合适位置。
+ 对代码进行必要的修改，使其通过测试。第3章节中讨论的[toJSON](/zh/part3/%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%85%A5_mongo_db#backend-connected-to-a-database)方法是定义<i>id</i>参数的一个合适位置。
 #### 4.10: Blog list tests, step3
 
 <!-- Write a test that verifies that making an HTTP POST request to the <i>/api/blogs</i> url successfully creates a new blog post. At the very least, verify that the total number of blogs in the system is increased by one. You can also verify that the content of the blog post is saved correctly to the database.-->
@@ -1382,7 +1382,7 @@ afterAll(() => {
  实现删除单个博客文章资源的功能。
 
 <!-- Use the async/await syntax. Follow [RESTful](/en/part3/node_js_and_express#rest) conventions when defining the HTTP API.-->
- 使用async/await语法。在定义HTTP API时遵循[RESTful](/en/part3/node_js_and_express#rest)惯例。
+ 使用async/await语法。在定义HTTP API时遵循[RESTful](/zh/part3/node_js_%E4%B8%8E_express)惯例。
 
 <!-- Implement tests for the functionality.-->
  实现功能的测试。
@@ -1396,7 +1396,7 @@ afterAll(() => {
  使用async/await。
 
 <!-- The application mostly needs to update the amount of <i>likes</i> for a blog post. You can implement this functionality the same way that we implemented updating notes in [part 3](/en/part3/saving_data_to_mongo_db#other-operations).-->
- 应用主要需要更新一篇博客文章的<i>喜欢</i>的数量。你可以用我们在[第三章节](/en/part3/saving_data_to_mongo_db#other-operations)中实现更新笔记的方法来实现这一功能。
+ 应用主要需要更新一篇博客文章的<i>喜欢</i>的数量。你可以用我们在[第三章节](/zh/part3/%E5%B0%86%E6%95%B0%E6%8D%AE%E5%AD%98%E5%85%A5_mongo_db#other-operations)中实现更新笔记的方法来实现这一功能。
 
 <!-- Implement tests for the functionality.-->
  实现该功能的测试。

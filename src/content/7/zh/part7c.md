@@ -8,7 +8,7 @@ lang: zh
 <div class="content">
 
 <!-- In part 2, we examined two different ways of adding styles to our application: the old-school [single CSS](/en/part2/adding_styles_to_react_app) file and [inline-styles](/en/part2/adding_styles_to_react_app#inline styles). In this part, we will take a look at a few other ways.-->
- 在第二章节中，我们研究了向我们的应用添加样式的两种不同方式：老式的[单一CSS](/en/part2/adding_styles_to_react_app)文件和[inline-styles](/en/part2/adding_styles_to_react_app#inline styles)。在这一部分，我们将看一下其他的一些方法。
+ 在第二章节中，我们研究了向我们的应用添加样式的两种不同方式：老式的[单一CSS](/zh/part2/%E7%BB%99_react%E5%BA%94%E7%94%A8%E5%8A%A0%E7%82%B9%E6%A0%B7%E5%BC%8F)文件和[inline-styles](/zh/part2/%E7%BB%99_react%E5%BA%94%E7%94%A8%E5%8A%A0%E7%82%B9%E6%A0%B7%E5%BC%8F)。在这一部分，我们将看一下其他的一些方法。
 
 ### Ready-made UI libraries
 

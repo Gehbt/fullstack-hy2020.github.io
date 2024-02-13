@@ -19,7 +19,7 @@ lang: zh
  我们通过将代码分为独立的模块来实现我们的应用，这些模块被<i>imported</i>到需要它们的地方。尽管ECMAScript标准中定义了ES6模块，但老的浏览器实际上不知道如何处理被划分为模块的代码。
 
 <!-- For this reason, code that is divided into modules must be <i>bundled</i> for browsers, meaning that all of the source code files are transformed into a single file that contains all of the application code. When we deployed our React frontend to production in [part 3](/en/part3/deploying_app_to_internet), we performed the bundling of our application with the _npm run build_ command. Under the hood, the npm script bundles the source code using webpack, which produces the following collection of files in the <i>build</i> directory:-->
-由于这个原因，分为模块的代码必须为浏览器进行<i>捆绑</i>，也就是说，所有的源代码文件都被转化为一个包含所有应用代码的文件。当我们在[第三章节](/en/part3/deploying_app_to_internet)中把我们的React前端部署到生产中时，我们用_npm run build_命令进行了应用的捆绑。在引擎盖下，npm脚本使用webpack捆绑源代码，在<i>build</i>目录下产生以下文件集合。
+由于这个原因，分为模块的代码必须为浏览器进行<i>捆绑</i>，也就是说，所有的源代码文件都被转化为一个包含所有应用代码的文件。当我们在[第三章节](/zh/part3/%E6%8A%8A%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2%E5%88%B0%E7%BD%91%E4%B8%8A)中把我们的React前端部署到生产中时，我们用_npm run build_命令进行了应用的捆绑。在引擎盖下，npm脚本使用webpack捆绑源代码，在<i>build</i>目录下产生以下文件集合。
 
 <pre>
 .

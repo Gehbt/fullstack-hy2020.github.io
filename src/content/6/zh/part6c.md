@@ -8,7 +8,7 @@ lang: zh
 <div class="content">
 
 <!-- Let's expand the application, such that the notes are stored to the backend. We'll use [json-server](/en/part2/getting_data_from_server), familiar from part 2.-->
- 让我们扩展应用，使笔记被存储到后台。我们将使用[json-server](/en/part2/getting_data_from_server)，这在第二章节中已经很熟悉。
+ 让我们扩展应用，使笔记被存储到后台。我们将使用[json-server](/zh/part2/%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE)，这在第二章节中已经很熟悉。
 
 <!-- The initial state of the database is stored into the file <i>db.json</i>, which is placed in the root of the project:-->
  数据库的初始状态被存储在文件<i>db.json</i>中，它被放置在项目的根部。
